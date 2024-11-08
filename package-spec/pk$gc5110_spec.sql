@@ -51,9 +51,9 @@ create or replace PACKAGE pk$gc5110 AS
 --    * @param pi_key   Record Key
 --  */
 --  PROCEDURE pr_val (pi_key IN NUMBER);
-  PROCEDURE pr_lnk_prc (pi_string IN VARCHAR2, p_separator IN VARCHAR2 DEFAULT ':');
+  PROCEDURE pr_cr_mtch_grp (pi_string IN VARCHAR2, p_separator IN VARCHAR2 DEFAULT ':');
   --
-  PROCEDURE pr_ulk_prc(pi_key IN NUMBER, pi_cn IN NUMBER);
+ -- PROCEDURE pr_ulk_prc(pi_key IN NUMBER, pi_cn IN NUMBER);
   --
 END pk$gc5110;
 /

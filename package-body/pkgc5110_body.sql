@@ -51,23 +51,19 @@ create or replace PACKAGE BODY pk$gc5110 AS
 --    * @param pi_key   Record Key
 --  */
 --  PROCEDURE pr_val (pi_key IN NUMBER);
-  PROCEDURE pr_lnk_prc (pi_string IN VARCHAR2, p_separator IN VARCHAR2 DEFAULT ':') IS
+  PROCEDURE pr_cr_mtch_grp (pi_string IN VARCHAR2, p_separator IN VARCHAR2 DEFAULT ':') IS
      BEGIN
-		 pkgc_20_lnk.pr_lnk_prc (pi_string  => pi_string,
+		 pkgc_21_mtch.pr_cr_mtch_grp (pi_string  => pi_string,
 								 p_separator => p_separator);
 		pkgc_00.pr_commit;
-  END pr_lnk_prc;
+  END pr_cr_mtch_grp;
   --
-  PROCEDURE pr_ulk_prc(pi_key IN NUMBER, pi_cn IN NUMBER) IS
+/*  PROCEDURE pr_ulk_prc(pi_key IN NUMBER, pi_cn IN NUMBER) IS
    BEGIN
 		 pkgc_20_lnk.pr_ulk_prc (pi_key  => pi_key,
 								 pi_cn => pi_cn);
 		pkgc_00.pr_commit;
-  END pr_ulk_prc;
+  END pr_ulk_prc; */
   --
 END pk$gc5110;
 /
-
-
-26000511000
-
